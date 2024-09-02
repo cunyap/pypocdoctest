@@ -27,8 +27,8 @@ build:
   apt_packages:
     - clang
   commands:
-    - mkdir -p $READTHEDOCS_OUTPUT/html/_static
-    - mkdir -p $READTHEDOCS_OUTPUT/_static
+    - cp -r src/main/python/pyPOCQuantU/pypocquant/manual/ui_images _build/html/ui_images
+
 
 # Install requirements required to build your docs
 python:
