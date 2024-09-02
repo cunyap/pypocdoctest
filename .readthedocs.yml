@@ -16,12 +16,16 @@ sphinx:
 submodules:
   include: all
 
-# Optionally build your docs in additional formats such as PDF and ePub
+# Build your docs in additional formats such as PDF and ePub
 formats: all
 
-# Optionally set the version of Python and requirements required to build your docs
+# Set the version of Python and OS
+build:
+  os: "ubuntu-22.04"
+  tools:
+    python: "3.6"
+
+# Install requirements required to build your docs
 python:
-  version: 3.6
   install:
     - requirements: requirements/linux.txt
-
