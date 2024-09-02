@@ -30,9 +30,9 @@ build:
     - pwd && ls
     - ls src/main/python/pyPOCQuantUI/
     - mkdir -p docs/_static
+    - mkdir -p docs/_build/html
     - ls docs/
-    # - mkdir -p $READTHEDOCS_OUTPUT/html/ui_images
-    # - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images $READTHEDOCS_OUTPUT/html/ui_images
+    - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
 
 
 # Install requirements required to build your docs
