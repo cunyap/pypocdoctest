@@ -23,7 +23,9 @@ formats: all
 build:
   os: "ubuntu-22.04"
   tools:
-    python: "3.6"
+    python: "3.6.12"
+  apt_packages:
+    - clang
 
 # Install requirements required to build your docs
 python:
