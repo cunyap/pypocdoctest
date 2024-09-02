@@ -27,7 +27,8 @@ build:
   apt_packages:
     - clang
   commands:
-    - mkdir -p docs/_static
+    - mkdir -p $READTHEDOCS_OUTPUT/html/_static
+    - mkdir -p $READTHEDOCS_OUTPUT/_static
 
 # Install requirements required to build your docs
 python:
