@@ -29,7 +29,7 @@ build:
   commands:
     - pwd && ls
     - ls src/main/python/pyPOCQuantUI/
-    - mkdir -p docs/_static
+    # - mkdir -p docs/_static
     - ls docs/
     # - mkdir -p $READTHEDOCS_OUTPUT/html/ui_images
     # - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images $READTHEDOCS_OUTPUT/html/ui_images
