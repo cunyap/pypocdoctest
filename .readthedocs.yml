@@ -38,6 +38,8 @@ build:
       - mkdir -p docs/_static
       - mkdir -p docs/_build/html
       - mkdir -p docs/_images
+      - mkdir -p _readthedocs/html/ui_images
+      - mkdir -p _readthedocs/html/_images/ui_images
       - mkdir -p docs/_build/html/_images
       - mkdir -p docs/_build/html/_static
       - ls docs/
@@ -47,11 +49,14 @@ build:
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_images/ui_images
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/_images/ui_images
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/_static/ui_images
+      - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images _readthedocs/html/ui_images
+      - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images _readthedocs/html/_images/ui_images
       - ls docs/_build/html/ui_images
       - ls docs/_build/html/_static
       - ls docs/_build/html/_images
       - ls docs/_images
       - ls docs/_static
+      - ls _readthedocs/html/_images
       # - python -m sphinx -b html docs/ docs/_build/html
 
 
