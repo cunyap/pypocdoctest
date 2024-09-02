@@ -34,7 +34,8 @@ build:
     - ls docs/
     - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
     - ls docs/_build/html/ui_images
-    - python make_doc.py
+    # - python make_doc.py
+    - sphinx-build -b html docs/ docs/_build/html  # This is crucial to trigger the build
 
 
 # Install requirements required to build your docs
