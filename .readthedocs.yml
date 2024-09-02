@@ -39,6 +39,7 @@ build:
       - mkdir -p docs/_build/html
       - ls docs/
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
+      - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/ui_images
       - ls docs/_build/html/ui_images
 
 
