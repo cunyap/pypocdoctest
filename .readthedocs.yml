@@ -19,6 +19,11 @@ submodules:
 # Build your docs in additional formats such as PDF and ePub
 formats: all
 
+# Install requirements required to build your docs
+python:
+  install:
+    - requirements: requirements/linux.txt
+
 # Set the version of Python and OS
 build:
   os: "ubuntu-22.04"
@@ -26,19 +31,16 @@ build:
     python: "3.6"
   apt_packages:
     - clang
-  commands:
-    - pwd && ls
-    - ls src/main/python/pyPOCQuantUI/
-    - mkdir -p docs/_static
-    - mkdir -p docs/_build/html
-    - ls docs/
-    - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
-    - ls docs/_build/html/ui_images
-    # - python make_doc.py
-    - sphinx-build -b html docs/ docs/_build/html  # This is crucial to trigger the build
+    
+commands:
+  - pwd && ls
+  - ls src/main/python/pyPOCQuantUI/
+  - mkdir -p docs/_static
+  - mkdir -p docs/_build/html
+  - ls docs/
+  - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
+  - ls docs/_build/html/ui_images
+  # - python make_doc.py
+  - sphinx-build -b html docs/ docs/_build/html  # This is crucial to trigger the build
 
 
-# Install requirements required to build your docs
-python:
-  install:
-    - requirements: requirements/linux.txt
