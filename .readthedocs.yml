@@ -26,13 +26,13 @@ build:
     python: "3.6"
   apt_packages:
     - clang
-  # commands:
-  #   - pwd && ls
-  #   - ls src/main/python/pyPOCQuantUI/
-  #   # - mkdir -p docs/_static
-  #   - ls docs/
-  #   # - mkdir -p $READTHEDOCS_OUTPUT/html/ui_images
-  #   # - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images $READTHEDOCS_OUTPUT/html/ui_images
+  commands:
+    - pwd && ls
+    - ls src/main/python/pyPOCQuantUI/
+    - mkdir -p docs/_static
+    - ls docs/
+    - mkdir -p $READTHEDOCS_OUTPUT/html/ui_images
+    - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images $READTHEDOCS_OUTPUT/html/ui_images
 
 
 # Install requirements required to build your docs
