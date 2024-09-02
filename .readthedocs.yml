@@ -31,7 +31,7 @@ build:
     python: "3.6"
   apt_packages:
     - clang  
-  commands:
+  post_install:
     - pwd && ls
     - ls src/main/python/pyPOCQuantUI/
     - mkdir -p docs/_static
@@ -39,7 +39,5 @@ build:
     - ls docs/
     - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
     - ls docs/_build/html/ui_images
-    # - python make_doc.py
-    - sphinx-build -b html docs/ docs/_build/html  # This is crucial to trigger the build
 
 
