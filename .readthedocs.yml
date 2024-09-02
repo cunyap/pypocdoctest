@@ -28,7 +28,8 @@ build:
     - clang
   commands:
     - pwd && ls
-    - cp -r /src/main/python/pyPOCQuantU/pypocquant/manual/ui_images _build/html/ui_images
+    - ls src/main/python/pyPOCQuantUI/
+    - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images _build/html/ui_images
 
 
 # Install requirements required to build your docs
