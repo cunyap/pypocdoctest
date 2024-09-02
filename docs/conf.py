@@ -115,6 +115,8 @@ project = 'pyPOCQuant'
 copyright = '2020, Andreas P. Cuny and Aaron Ponti'
 author = 'Andreas P. Cuny and Aaron Ponti'
 
+# The master toctree document.
+master_doc = 'index'  # Ensure this points to your main .rst file, often 'index'
 
 # -- General configuration ---------------------------------------------------
 
