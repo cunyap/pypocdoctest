@@ -41,6 +41,8 @@ build:
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/ui_images
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/ui_images
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_static/ui_images
+      - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_images/ui_images
+      - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images docs/_build/html/_images/ui_images
       - ls docs/_build/html/ui_images
       - python -m sphinx -b html docs/ docs/_build/html
 
