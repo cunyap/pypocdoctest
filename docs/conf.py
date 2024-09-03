@@ -56,9 +56,7 @@ except:
 # build_quickstart()
 
 manual_dir = Path(__file__).parent.parent / "src" / "main" / "python" / "pyPOCQuantUI" / "pypocquant" / "manual"
-docs_dir = Path(__file__).parent.parent / "latest"
-print(f'-------------------------------------------------------------------------------------------------')
-print(f'DOC DIR: {docs_dir}')
+docs_dir = Path(__file__).parent.parent / "docs"
 src = [
     str(manual_dir / "ui_images"),
     str(manual_dir / "demo_image"),
@@ -88,10 +86,10 @@ src = [
     str(docs_dir / "setup")
 ]
 dst = [
-    str(docs_dir / "_readthedocs" / "html" / "ui_images"),
-    str(docs_dir / "_readthedocs" / "html" / "demo_image"),
-    str(docs_dir / "_readthedocs" / "html" / "problem_solutions"),
-    str(docs_dir / "_readthedocs" / "html" / "setup")
+    str(docs_dir / "_build" / "html" / "ui_images"),
+    str(docs_dir / "_build" / "html" / "demo_image"),
+    str(docs_dir / "_build" / "html" / "problem_solutions"),
+    str(docs_dir / "_build" / "html" / "setup")
 ]
 
 for idx in range(0, len(src)):
@@ -105,7 +103,7 @@ except FileNotFoundError:
     # doesn't exists
     shutil.copytree(
         str(Path(__file__).parent.parent / "src" / "main" / "resources" / "base" / "img"),
-        str(docs_dir / "_readthedocs" / "html" / "src" / "main" / "resources" / "base" / "img")
+        str(docs_dir / "_build" / "html" / "src" / "main" / "resources" / "base" / "img")
     )
 else:
     pass
