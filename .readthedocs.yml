@@ -44,7 +44,7 @@ build:
       - mkdir -p ../latest/_readthedocs/html/setup
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/setup/* ../latest/_readthedocs/html/setup
       - mkdir -p ../latest/_readthedocs/html/src/main/resources/base/img
-      - cp -r src/main//resources/base/img/* ../latest/_readthedocs/html/src/main/resources/base/img
+      - cp -r src/main/resources/base/img/* ../latest/_readthedocs/html/src/main/resources/base/img
       - ls -R ../
       # - python -m sphinx -b html docs/ docs/_build/html
 
