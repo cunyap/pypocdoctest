@@ -32,7 +32,7 @@ build:
   apt_packages:
     - clang
   jobs:
-    post_install:
+    post_build:
       - pwd && ls
       - ls src/main/python/pyPOCQuantUI/
       - mkdir -p docs/_static
