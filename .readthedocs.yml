@@ -42,6 +42,7 @@ build:
       - mkdir -p _readthedocs/html/_images/ui_images
       - mkdir -p ../_readthedocs/html/ui_images
       - mkdir -p ../_readthedocs/html/_images/ui_images
+      - mkdir -p ../latest/_readthedocs/html/ui_images
       - mkdir -p docs/_build/html/_images
       - mkdir -p docs/_build/html/_static
       - ls docs/
@@ -55,6 +56,7 @@ build:
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images _readthedocs/html/_images/ui_images
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images ../_readthedocs/html/ui_images
       - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images ../_readthedocs/html/_images/ui_images
+      - cp -r src/main/python/pyPOCQuantUI/pypocquant/manual/ui_images/* ../latest/_readthedocs/html/ui_images
       - ls docs/_build/html/ui_images
       - ls docs/_build/html/_static
       - ls docs/_build/html/_images
